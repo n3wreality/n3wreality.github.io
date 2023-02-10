@@ -32,6 +32,7 @@ body {
   color: #fff;
   font-family: 'Anonymous Pro', monospace;
   margin: auto;
+  overflow-wrap: anywhere;
 }
 
 @media screen and (max-width: 719px) {
