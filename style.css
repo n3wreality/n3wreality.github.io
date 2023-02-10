@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Hack Attack';
+  src: url(fonts/hackattackbold.woff2);
+}
+
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url(fonts/anonymouspro.woff2);
+}
+
+html {
+  user-select: none;
+}
+
+body {
+  background-image: url(images/background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#69086E;
+}
+
+.main {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#description {
+  color: #fff;
+  font-family: 'Anonymous Pro', monospace;
+  margin: auto;
+}
+
+@media screen and (max-width: 719px) {
+  #avatar {
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 50vw;
+  }
+  
+  #header {
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    font-family: 'Hack Attack', monospace;
+    font-size: 10vw;
+  }
+
+  #description {
+    font-size: 5vw;
+  }
+
+}
+
+@media screen and (min-width: 720px) {
+  #avatar {
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    height: 20vw;
+  }
+  
+  #header {
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    font-family: 'Hack Attack', monospace;
+    font-size: 5vw;
+  }
+
+  #description {
+    font-size: 2vw;
+  }
+}
